@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #727272;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 20px;
+}
+
+
+
+input.example {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #666;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos dentro de clickEvents y focusEvents */
+#clickEvents,
+#focusEvents,
+#mouseoverEvents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#clickEvents h2, 
+#focusEvents h2,
+#mouseoverEvents h2 {
+    grid-column: span 3; /* Los títulos abarcan las tres columnas */
+}
+
+#clickEvents .example,
+#focusEvents .example,
+#mouseoverEvents .example {
+    background-color: rgb(149, 155, 192);
+    border: 1px solid #666;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#mouseoverEvents .example:hover {
+    background-color: rgb(149, 155, 192);
+    outline: none;
+}
+
